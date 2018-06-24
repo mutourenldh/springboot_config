@@ -12,3 +12,11 @@ server:
 #    dog:
 #      name: 小狗
 #      age: 12
+logging:
+  level:
+    com.haoge: debug
+  path: /spring/log
+  pattern:
+    file: "%d{yyyy-MM-dd} === [%thread] === %-5level === %logger{50} ==== %msg%n"
+    console: "%d{yyyy/MM/dd} [%thread] %-5level %logger{50} - %msg%n"
+    
